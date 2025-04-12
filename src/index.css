@@ -1,0 +1,89 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 240 10% 99%;
+    --foreground: 240 10% 10%;
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 10%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 10%;
+    --primary: 252 80% 57%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 252 16% 94%;
+    --secondary-foreground: 252 80% 57%;
+    --muted: 240 5% 96%;
+    --muted-foreground: 240 4% 46%;
+    --accent: 263 80% 65%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 90% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 240 6% 90%;
+    --input: 240 6% 90%;
+    --ring: 252 80% 57%;
+    --radius: 0.75rem;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
+}
+
+@layer components {
+  .page-container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 min-h-[calc(100vh-160px)];
+  }
+  
+  .page-title {
+    @apply text-3xl font-bold mb-6 text-foreground;
+  }
+  
+  .card-hover {
+    @apply transition-all duration-200 hover:shadow-lg hover:-translate-y-1;
+  }
+  
+  .nav-link {
+    @apply px-3 py-2 rounded-md text-sm font-medium transition-colors;
+  }
+  
+  .nav-link-active {
+    @apply bg-primary text-primary-foreground;
+  }
+  
+  .nav-link-inactive {
+    @apply text-foreground hover:bg-secondary hover:text-primary;
+  }
+  
+  .tag {
+    @apply inline-flex items-center rounded-full bg-secondary px-2.5 py-0.5 text-xs font-medium text-secondary-foreground me-1.5 mb-1.5;
+  }
+  
+  .form-group {
+    @apply space-y-2 mb-4;
+  }
+  
+  .form-label {
+    @apply block text-sm font-medium text-gray-700;
+  }
+  
+  .form-input {
+    @apply block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary;
+  }
+  
+  .form-button {
+    @apply inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-primary hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary;
+  }
+  
+  .search-input {
+    @apply w-full px-4 py-2 rounded-full border-2 border-gray-100 bg-white focus:outline-none focus:border-primary shadow-sm transition-colors;
+  }
+}

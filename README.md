@@ -48,8 +48,6 @@ MemberVerse UI is designed to be the frontend for a community or membership-base
 
 ### Installation
 ```bash
-git clone 
-cd memberverse-ui
-npm install
-
+git clone : https://github.com/SpMonish84/memberverse-ui.git
+ 
 

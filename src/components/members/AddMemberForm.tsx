@@ -41,9 +41,8 @@ const AddMemberForm: React.FC<AddMemberFormProps> = ({ onAddMember, onCancel }) 
       return;
     }
 
-    // Create a new member object
     const newMember: Member = {
-      id: Date.now(), // Use timestamp as a simple ID
+      id: Date.now(),
       name: name.trim(),
       role: role.trim(),
       focus: focus.trim(),

@@ -40,14 +40,60 @@ MemberVerse UI is designed to be the frontend for a community or membership-base
 
 ---
 
-# Getting Started
+# MemberVerse UI
 
-# Prerequisites
-- Node.js (v16+ recommended)
-- npm or yarn
+A modern, clean, and responsive web application to browse community members built with **React**, **Vite**, **TailwindCSS**, **Lucide-React Icons**, and **TypeScript**.
+
+---
+
+### Getting Started
+
+Follow these steps to set up and run the project locally.
+
+### Prerequisites
+- **Node.js** (version 16 or higher)
 
 ### Installation
 ```bash
-git clone : https://github.com/SpMonish84/memberverse-ui.git
- 
+npm install
+```
+> Installs all project dependencies from `package.json`.
+
+### Run the Development Server
+```bash
+npm run dev
+```
+
+### Build for Production
+```bash
+npm run build
+```
+> Creates an optimized production-ready build of the app inside the `dist/` folder.
+
+### Preview Production Build Locally
+```bash
+npm run preview
+```
+> Serves the production build locally to test before deployment.
+
+---
+
+### Project Structure
+
+```
+/src
+  /components
+    MemberCard.tsx     # Card component to display member info
+    MemberDetail.tsx   # Expandable details inside a card
+  /lib
+    types.ts           # TypeScript types and interfaces
+  /pages
+    index.tsx          # Main page displaying member list
+  /assets
+    (optional images, logos)
+```
+
+---
+
+> Happy Building! 
 

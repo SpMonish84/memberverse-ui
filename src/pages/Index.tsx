@@ -9,7 +9,6 @@ const Index = () => {
     <PageTransition>
       <div className="bg-gradient-to-b from-community-50 to-white">
         <div className="page-container">
-          {/* Hero Section */}
           <div className="text-center py-16 md:py-24">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
               Welcome to <span className="text-community-600">Community Nexus</span>
@@ -32,8 +31,6 @@ const Index = () => {
               </Link>
             </div>
           </div>
-
-          {/* Features Section */}
           <div className="py-12">
             <h2 className="text-3xl font-bold text-center mb-12">Discover Our Platform</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
